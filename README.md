@@ -11,8 +11,9 @@ Depth estimation for the Hamlym dataset was calculated by the metric Depth Anyth
 The saturation depth is set to 300mm with pixel values lower that 1mm ignored.
 
 EndoSLAM dataset Evaluation:
-Depth estimation for the EndoSLAM dataset was calculated by the image-base Depth Anything V2 large model, EndoSLAM results are stored as unit8 (320,320,4) png images, therefore the alpha channel needs to be ignored before comaring to the output resilts of Depth Anything V2.
+Depth estimation for the EndoSLAM dataset was calculated by the image-base Depth Anything V2 large model, EndoSLAM results are stored as unit8 (320,320,4) png images, therefore the alpha channel needs to be ignored before comaring to the output results of Depth Anything V2.
 
-  - True depth must be stored in true_depth_path
+  - True depth (EndoSLAM/Hamlyn) must be stored in true_depth_path
   - Output of Depth Anything V2 must be stored in dav2_path
+
 Also added is the code for the Visualization in the paper. 
